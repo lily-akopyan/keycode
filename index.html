@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Key Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Press a key to see its' code</h1>
+  <h2 id="code"></h2>
+  <script>
+    window.addEventListener('keydown', function (e) {
+      document.getElementById('code').innerText = `${e.key} : ${e.code}`;
+    });
+  </script>
+</body>
+
+</html>
